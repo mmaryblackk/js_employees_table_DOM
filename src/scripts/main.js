@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function parseValue(text) {
       const num = text.replace(/[$,]/g, '');
 
-      if (!isNaN(num)) {
+      if (!isNaN(parseFloat(num))) {
         return parseFloat(num);
       }
 
